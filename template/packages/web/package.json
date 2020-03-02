@@ -1,0 +1,42 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot --inline",
+    "prod": "webpack --mode production",
+    "electron:dev": "concurrently \"webpack-dev-server --hot --inline\" \"electron .\""
+  },
+  "main": "electron.js",
+  "dependencies": {
+    "react-dom": "^16.12.0",
+    "react-native-web": "^0.11.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-optional-chaining": "7.8.3",
+    "@babel/plugin-transform-react-constant-elements": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.8.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "electron": "^8.0.0",
+    "electron-builder": "^22.3.2",
+    "electron-devtools-installer": "^2.2.4",
+    "electron-is-dev": "^1.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react-hot-loader": "^4.11.0",
+    "react-svg-loader": "^3.0.3",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  }
+}
